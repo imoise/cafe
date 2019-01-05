@@ -1,0 +1,76 @@
+header{
+	background-color: rgb(83,52,25);
+	color: rgb(255, 165, 0);
+	text-align: center;
+	border-style: outset;
+	border-color: rgb(255, 165, 0);
+	font-size: 26px;
+	animation-name: banner;
+    animation-duration: 6s;
+	font-family: 'Lobster', cursive;
+}
+@keyframes banner {
+    from{background-color: rgb(255, 165, 0);}
+    to {background-color: rgb(205,133,63);}
+}
+#signature_cat{
+	height: 110px;
+	width: 110px;
+	border-style:inset;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	border: solid;
+    background-color: rgb(160,82,45);
+	animation-name: bannerLinks;
+    animation-duration: 6s;
+}
+@keyframes bannerLinks {
+    from {background-color: rgb(255, 165, 0);}
+    to {background-color: rgb(160,82,45);}
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+	color: rgb(255,228,181);
+	border-right-style:inset;
+	border-color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+	background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.active {
+    background-color: rgb(255,140,0);
+	color: rgb(255,218,185);
+}
+#shopping_cart{
+	height:16px;
+	width: 25px;
+	display: inline;
+}
+body{
+	background-color: rgb(255,228,196);
+}
+
+footer{
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	margin-top: 10px;
+	padding: 20px 30px;
+}
+.contacts{
+	padding-left: 250px;
+}

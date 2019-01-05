@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- Coffee Website-->
+
+<html lang="en">
+	<head>
+		<title>Caf&eacute au Lait: Coffees</title>
+		<link rel="stylesheet" type="text/css" href="base.css">
+		<link rel="stylesheet" type="text/css" href="coffee.css">
+		<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Rakkas' rel='stylesheet' type='text/css'>
+		<script src="base.js"></script>
+		<meta charset="utf-8">
+	</head>
+		
+		<body onload = "cookiesOn();">
+			<header>
+				<span id = "site_title"><h1>Caf&eacute au Lait</h1></span>
+				<img src = "signature_cat.gif" alt = "Cafe Icon" id = "signature_cat">
+			</header>
+			<nav>
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a class="active" href="coffee.html">Coffees</a></li>
+				  <li><a href="tea.html">Teas</a></li>
+				  <li><a href="pastries.html">Pastries</a></li>
+				  <li><a href="#about">Specials</a></li>
+				  <li><a href="shoppingcart.html">Shopping Cart  <img src = "shopping_cart.png" id = "shopping_cart"></a> </li>
+				</ul>
+			</nav>
+			<main>
+				<h2><b>Coffee Menu</b></h2>
+				<hr>
+				<br>
+				<br>
+
+				<img src = "white_coffee.gif" alt = "White Coffee" class = "menu_item">
+				<br>
+				<h3>Café Blanche</h3>
+				<form>
+					<span class = "label">Number of Items: </span><input type = "number" id = "number_blanche" class = "number_bar label_bar" name ="number_items" min="0" step="1" placeholder = "Input positive integer" onInput = "calculateTotal('number_blanche','blanche_price', 'blanche_total');">
+					<span  class = "label">Unit Price: $</span><input type = "number" id = "blanche_price" class = "label_bar no_input" name = "price" value = "2.50" disabled>
+					<br>
+					<span  class = "label">Total Cost: $</span><input id= "blanche_total" type = "number" class = "label_bar no_input"  value = "0" disabled>
+					<br>
+					<br>
+					<input type="submit" value="Add to Cart" class="label cart_button" onclick = "addCart('number_blanche', 'cafeBlanche');">
+				</form>
+				<p>
+					Café Blanche is a drink meant for those who need an extra boost of energy in their day but can't quite handle caffeine well.
+					Made with 95% milk and 5% caffeinated coffee, this type of coffee uses milk grown from locally grown farms like all our products.
+					With a rich white foam, light texture, this coffee has also been the favorite of customers first introduced to the taste of coffee.
+ 				</p>
+				<hr>
+				<br>
+				
+			   <img src = "cafe_au_lait.gif" alt = "Café au Lait" class = "menu_item">
+				<br>
+					<h3>Café au Lait</h3>
+				<form>
+					<span class = "label">Number of Items: </span><input type = "number" id = "number_lait" class = "number_bar label_bar" name ="number_items" min="0" step="1" placeholder = "Input positive integer" onInput = "calculateTotal('number_lait','lait_price', 'lait_total');">
+					<span  class = "label">Unit Price: $</span><input type = "number" id = "lait_price" class = "label_bar no_input" name = "price" value = "3.65" disabled>
+					<br>
+					<span  class = "label">Total Cost: $</span><input id= "lait_total" type = "number" class = "label_bar no_input"  value = "0" disabled>
+					<br>
+					<br>
+					<input type="submit" value="Add to Cart" class="label cart_button" onclick = "addCart('number_lait', 'cafeLait');">
+				</form>
+				<p>
+					Café au Lait is our café's speciallty and number one best selling product. 
+					Made with 50% milk and 50% black coffee this drink is the best known for being a perfect balance of <mark>light</mark> and <b>dark</b>. 
+					It is for this reason our customers sometimes refer to it as <i>noire lumière</i> or <b>Black</b> <mark>Light</mark>.
+					This drink is meant for those who desire their coffee to not only wake their mind but also their taste buds in the early morning.  
+ 				</p>
+				<hr>
+				<br>
+				
+			   <img src = "pure_black.gif" alt = "Pure Black Coffee" class = "menu_item">
+				<br>
+					<h3>Vantablack Coffee</h3>
+				<form>
+					<span class = "label">Number of Items: </span><input type = "number" id = "number_vantablack" class = "number_bar label_bar" name ="number_items" min="0" step="1" placeholder = "Input positive integer" onInput = "calculateTotal('number_vantablack','vantablack_price', 'vantablack_total');">
+					<span  class = "label">Unit Price: $</span><input type = "number" id = "vantablack_price" class = "label_bar no_input" name = "price" value = "15.25" disabled>
+					<br>
+					<span  class = "label">Total Cost: $</span><input id= "vantablack_total" type = "number" class = "label_bar no_input"  value = "0" disabled>
+					<br>
+					<br>
+					<input type="submit" value="Add to Cart" class="label cart_button" onclick = "addCart('number_vantablack', 'cafeVantablack');">
+				</form>
+				<p>
+					<b>Vantablack Coffee</b> is a coffee like none other. Named after the recently discovered artificial material,
+					<b>Vantablack</b> which is known for being the darkest man-made substance due to the fact it absorbs 99.96% of all light that hits it's surface. 
+					The coffee beans used in our coffee were named after the material after being found growing in a cave in the south tropics being almost completely void of sunlight.
+					These beans were found to absorb almost all light like <b>Vantablack</b> but with one added effect. One cup of this coffee packs enough caffeine to stay up 3 days and nights!
+					That's why <b>Vantablack Coffee</b> is popular among students needing to finish a last minute essay and businessmen who want to finish their paper work in time for the holidays.
+					However, we worn this coffee is not for everyone because after those 3 days of energy follows three days of coma like sleep to make up for it. Will you dare to drink the drink known as the
+					<i>Devil's Coffee</i>? The choice is yours!
+ 				</p>
+				<hr>
+			</main>
+			<footer >
+			<b>Contact Info: </b> 
+				<br>
+					<span class = "contacts" >Owner Name: Isaac Moise</span>
+					<span class = "contacts" >Phone Number: XXX-XXX-0891</span>
+				<br>
+				<b>Location: </b>
+				<br>
+					<span class = "contacts">Address: 361 Covfefe Dr.</span>
+					<span class = "contacts">City: West Hartford, CT</span>
+					<span class = "contacts">ZipCode: 06107</span>
+					<iframe width="0" height="0" src="https://www.youtube.com/embed/Rky4j5k9Rwo?autoplay=1&loop=1&playlist=Rky4j5k9Rwo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			</footer>
+		</body>
+</html>

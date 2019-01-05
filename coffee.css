@@ -1,0 +1,75 @@
+h2{
+	text-align:center; 
+	font-size: 34px;
+	font-family: 'Rakkas', cursive;
+}
+h3{
+	text-indent: 50px;
+	text-align:left; 
+	font-style: italic;
+	font-size: 28px;
+}
+.menu_item{
+	margin-left: 50px;
+	height: 320px;
+	width: 550px;
+	border: outset;
+	transition: width 3s, height 3s;
+}
+.menu_item:hover{
+    width: 200px;
+	height: 200px;
+}
+p{
+	text-indent: 50px;
+	text-align: left;
+	font-size: 18px;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-family: 'Crete Round', serif;
+}
+.label{
+	font-size: 18px;
+	padding-left: 50px;
+	font-weight: bold;
+	
+}
+.label_bar{
+	font-size: 18px;
+	height: 25px;
+	width: 80px;
+	border-radius: 6px;
+}
+.number_bar{
+	width: 180px;
+	border-radius: 6px;
+}
+input[type=number]:focus {
+    border: 3px solid #555;
+}
+.no_input{
+	cursor: not-allowed;
+}
+.cart_button{
+	padding: 7px 10px;	
+	margin-left: 50px;
+	background-color: rgb(210,105,30);
+	border-style: solid;
+	border-color: rgb(218,165,32);
+	border-radius: 8px;
+	border-width: 4px;
+	color: white;
+	box-shadow: 0 6px #999;
+}
+.cart_button:hover {
+	background-color: rgb(190,85,10);
+	color: rgb(230, 230, 230);
+	border-color: rgb(198,145,12);
+	cursor: pointer;
+}
+
+.cart_button:active {
+  background-color: rgb(190,85,10);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

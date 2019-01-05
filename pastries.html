@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Tea Website-->
+
+<html lang="en">
+	<head>
+		<title>Café au Lait: Pastries</title>
+		<link rel="stylesheet" type="text/css" href="base.css">
+		<link rel="stylesheet" type="text/css" href="pastries.css">
+		<script src="base.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Rakkas' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">
+	</head>
+		
+		<body onload = "cookiesOn();">
+			<header>
+				<span id = "site_title"><h1>Café au Lait</h1></span>
+				<img src = "signature_cat.gif" alt = "Cafe Icon" id = "signature_cat">
+			</header>
+			<nav>
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="coffee.html">Coffees</a></li>
+				  <li><a href="tea.html">Teas</a></li>
+				  <li><a class="active" href="pastries.html">Pastries</a></li>
+				   <li><a href="reviews.html">Reviews</a></li>
+				  <li><a href="shoppingcart.html">Shopping Cart  <img src = "shopping_cart.png" id = "shopping_cart"></a> </li>
+				</ul>
+			</nav>
+			<main>
+				<h2><b>Pastries Menu</b></h2>
+				<hr>
+				<br>
+				<br>
+				
+				<img src = "donuts.gif" alt = "Donuts" class = "menu_item">
+				<br>
+				<h3>Donuts</h3>
+				<form>
+					<span class = "label">Number of Items: </span><input type = "number" id = "number_donuts" class = "number_bar label_bar" name ="number_items" min="0" step="1" placeholder = "Input positive integer" onInput = "calculateTotal('number_donuts','donuts_price', 'donuts_total');">
+					<span  class = "label">Unit Price: $</span><input type = "number" id = "donuts_price" class = "label_bar no_input" name = "price" value = "1.15" disabled>
+					<br>
+					<span  class = "label">Total Cost: $</span><input id= "donuts_total" type = "number" class = "label_bar no_input"  value = "0" disabled>
+					<br>
+					<br>
+					<input type="submit" value="Add to Cart" class="label cart_button" onclick = "addCart('number_donuts', 'pastriesDonuts');">
+				</form>
+				<p>
+					Our donuts are made in the early morning fresh and ready to go!
+					We have an assortment of donuts ranging from cream filled to jelly to plain to meet our customers wide variety of tastes!
+					We also allow our customers to custom order their donuts however, they must come to the store to do so.
+				</p>
+				<hr>
+				<br>
+				
+			   <img src = "sugar_cookie.gif" alt = "Sugar Cookie" class = "menu_item">
+				<br>
+					<h3>Sugar Cookie</h3>
+				<form>
+					<span class = "label">Number of Items: </span><input type = "number" id = "number_cookies" class = "number_bar label_bar" name ="number_items" min="0" step="1" placeholder = "Input positive integer" onInput = "calculateTotal('number_cookies','cookies_price', 'cookies_total');">
+					<span  class = "label">Unit Price: $</span><input type = "number" id = "cookies_price" class = "label_bar no_input" name = "price" value = "2.00" disabled>
+					<br>
+					<span  class = "label">Total Cost: $</span><input id= "cookies_total" type = "number" class = "label_bar no_input"  value = "0" disabled>
+					<br>
+					<br>
+					<input type="submit" value="Add to Cart" class="label cart_button" onclick = "addCart('number_cookies', 'pastriesCookies');">
+				</form>
+				<p>
+					Our sugar cookies are our most requested pastry dish! 
+					During the holiday seasons we like to offer holiday themed cookies for sale.
+					It is due to this that our sugar cookies are most often bought near the holidays.
+					
+ 				</p>
+				<hr>
+				<br>
+				
+				 <img src = "cake.gif" alt = "Cake" class = "menu_item">
+				<br>
+					<h3>Cake</h3>
+				<form>
+					<span class = "label">Number of Items: </span><input type = "number" id = "number_cake" class = "number_bar label_bar" name ="number_items" min="0" step="1" placeholder = "Input positive integer" onInput = "calculateTotal('number_cake','cake_price', 'cake_total');">
+					<span  class = "label">Unit Price: $</span><input type = "number" id = "cake_price" class = "label_bar no_input" name = "price" value = "5.45" disabled>
+					<br>
+					<span  class = "label">Total Cost: $</span><input id= "cake_total" type = "number" class = "label_bar no_input"  value = "0" disabled>
+					<br>
+					<br>
+					<input type="submit" value="Add to Cart" class="label cart_button" onclick = "addCart('number_cake', 'pastriesCake');">
+				</form>
+				<p>
+					Our cakes come in a variety of flavors ranging from vanilla all the way to chocolate!
+					Customers typical order a slice of cake along with a cup of tea or coffee.
+					Customers may also come to the store in person and order a whole cake at a special price.	
+ 				</p>
+				<hr>
+		
+			</main>
+			<footer>
+			<b>Contact Info: </b> 
+				<br>
+					<span class = "contacts" >Owner Name: Isaac Moise</span>
+					<span class = "contacts" >Phone Number: XXX-XXX-0891</span>
+				<br>
+				<b>Location: </b>
+				<br>
+					<span class = "contacts">Address: 361 Covfefe Dr.</span>
+					<span class = "contacts">City: West Hartford, CT</span>
+					<span class = "contacts">ZipCode: 06107</span>		
+					<iframe width="0" height="0" src="https://www.youtube.com/embed/E338aF6QHu8?rel=0&autoplay=1&loop=1&playlist=E338aF6QHu8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					</footer>
+		</body>
+</html>

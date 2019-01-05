@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- CS MWD Template-->
+
+<html lang="en">
+	<head>
+		<title>Café au Lait: Home</title>
+		<link rel="stylesheet" type="text/css" href="base.css">
+		<link rel="stylesheet" type="text/css" href="shoppingcart.css">
+		<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Rakkas' rel='stylesheet' type='text/css'>
+		<script src="base.js"></script>
+		<script src="shoppingcart.js"></script>
+		<meta charset="utf-8">
+	</head>
+		
+		<body onload = "cookiesOn();">
+			<header>
+					<span id = "site_title"><h1>Café au Lait</h1></span>
+					<img src = "signature_cat.gif" alt = "Cafe Icon" id = "signature_cat">
+			</header>
+			<nav>
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="coffee.html">Coffees</a></li>
+				  <li><a href="tea.html">Teas</a></li>
+				  <li><a href="pastries.html">Pastries</a></li>
+				  <li><a href="reviews.html">Reviews</a></li>
+				  <li><a class="active" href="shoppingcart.html">Shopping Cart  <img src = "shopping_cart.png" id = "shopping_cart"></a> </li>
+				</ul>
+			</nav>
+			<main>
+				
+				<h2><u>Shopping List</u></h2>
+				<img src = "cats.gif" alt = "cats.gif" id = "catsOne" class = "cats">
+				<img src = "cats.gif" alt = "cats.gif" id = "catsTwo" class = "cats">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<div>
+					<button id = "shoppingButton" onclick="createShoppingCart();">Show Shopping Cart</button>
+				</div>
+				<p id = "cart"></p>
+			</main>
+			<footer>
+				<b>Contact Info: </b> 
+				<br>
+					<span class = "contacts" >Owner Name: Isaac Moise</span>
+					<span class = "contacts" >Phone Number: XXX-XXX-0891</span>
+				<br>
+				<b>Location: </b>
+				<br>
+					<span class = "contacts">Address: 361 Covfefe Dr.</span>
+					<span class = "contacts">City: West Hartford, CT</span>
+					<span class = "contacts">ZipCode: 06107</span>
+					
+					<iframe width="0" height="0" src="https://www.youtube.com/embed/KzQiRABVARk?rel=0&autoplay=1&loop=1&playlist=KzQiRABVARk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			</footer>
+
+		</body>
+</html>

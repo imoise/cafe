@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Tea Website-->
+
+<html lang="en">
+	<head>
+		<title>Caf&eacute au Lait: Teas</title>
+		<link rel="stylesheet" type="text/css" href="base.css">
+		<script src="base.js"></script>
+		<link rel="stylesheet" type="text/css" href="tea.css">
+		<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Rakkas' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">
+	</head>
+		
+		<body onload = "cookiesOn();">
+			<header>
+				<span id = "site_title"><h1>Caf&eacute au Lait</h1></span>
+				<img src = "signature_cat.gif" alt = "Cafe Icon" id = "signature_cat">
+			</header>
+			<nav>
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="coffee.html">Coffees</a></li>
+				  <li><a class="active" href="tea.html">Teas</a></li>
+				  <li><a href="pastries.html">Pastries</a></li>
+				  <li><a href="reviews.html">Reviews</a></li>
+				  <li><a href="shoppingcart.html">Shopping Cart  <img src = "shopping_cart.png" id = "shopping_cart"></a> </li>
+				</ul>
+			</nav>
+			<main>
+				<h2><b>Tea Menu</b></h2>
+				<hr>
+				<br>
+				<br>
+				
+				<img src = "herbal_tea.gif" alt = "Herbal Tea" class = "menu_item">
+				<br>
+				<h3>Herbal Tea</h3>
+				<form>
+					<span class = "label">Number of Items: </span><input type = "number" id = "number_herbal" class = "number_bar label_bar" name ="number_items" min="0" step="1" placeholder = "Input positive integer" onInput = "calculateTotal('number_herbal','herbal_price', 'herbal_total');">
+					<span  class = "label">Unit Price: $</span><input type = "number" id = "herbal_price" class = "label_bar no_input" name = "price" value = "1.75" disabled>
+					<br>
+					<span  class = "label">Total Cost: $</span><input id= "herbal_total" type = "number" class = "label_bar no_input"  value = "0" disabled>
+					<br>
+					<br>
+					<input type="submit" value="Add to Cart" class="label cart_button" onclick = "addCart('number_herbal', 'teaHerbal');">
+				</form>
+				<p>
+					Our herbal tea is made of a special infusion of calming herbs and spices. 
+					Customers who order our herbal tea are typically overworked workers or people with a stressful decision to make.
+					These customers comment on how effective our tea is at soothing their stressed nerves so that they stress doesn't overwhelm them.
+				</p>
+				<hr>
+				<br>
+				
+			   <img src = "green_tea.gif" alt = "Green Tea" class = "menu_item">
+				<br>
+					<h3>Green Tea</h3>
+				<form>
+					<span class = "label">Number of Items: </span><input type = "number" id = "number_green" class = "number_bar label_bar" name ="number_items" min="0" step="1" placeholder = "Input positive integer" onInput = "calculateTotal('number_green','green_price', 'green_total');">
+					<span  class = "label">Unit Price: $</span><input type = "number" id = "green_price" class = "label_bar no_input" name = "price" value = "3.45" disabled>
+					<br>
+					<span  class = "label">Total Cost: $</span><input id= "green_total" type = "number" class = "label_bar no_input"  value = "0" disabled>
+					<br>
+					<br>
+					<input type="submit" value="Add to Cart" class="label cart_button" onclick = "addCart('number_green', 'teaGreen');">
+				</form>
+				<p>
+					Our green tea is rich in the antioxidants and nutrients your body needs in order to function. 
+					The customers who usually order our green tea are those that seek an early morning pick me up yet don't like the taste of coffee.
+					Our green tea is capable of giving anyone the energy the need to get by their day.
+ 				</p>
+				<hr>
+				<br>
+				
+				 <img src = "chamomile_tea.gif" alt = "Chamomile Tea" class = "menu_item">
+				<br>
+					<h3>Chamomile Tea</h3>
+				<form>
+					<span class = "label">Number of Items: </span><input type = "number" id = "number_chamomile" class = "number_bar label_bar" name ="number_items" min="0" step="1" placeholder = "Input positive integer" onInput = "calculateTotal('number_chamomile','chamomile_price', 'chamomile_total');">
+					<span  class = "label">Unit Price: $</span><input type = "number" id = "chamomile_price" class = "label_bar no_input" name = "price" value = "4.25" disabled>
+					<br>
+					<span  class = "label">Total Cost: $</span><input id= "chamomile_total" type = "number" class = "label_bar no_input"  value = "0" disabled>
+					<br>
+					<br>
+					<input type="submit" value="Add to Cart" class="label cart_button" onclick = "addCart('number_chamomile', 'teaChamomile');">
+				</form>
+				<p>
+					Our chamomile tea is made of dried chamomile leaves freshly imported from Cambodia. Also, our best selling tea, our chamomile tea is used by customers in need of s good nights rest.
+					Acting as a mild sedative, our chamomile tea is especially effective in putting people to sleep within hours of drinking it.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+ 				</p>
+				<hr>
+		
+			</main>
+			<footer>
+			<b>Contact Info: </b> 
+				<br>
+					<span class = "contacts" >Owner Name: Isaac Moise</span>
+					<span class = "contacts" >Phone Number: XXX-XXX-0891</span>
+				<br>
+				<b>Location: </b>
+				<br>
+					<span class = "contacts">Address: 361 Covfefe Dr.</span>
+					<span class = "contacts">City: West Hartford, CT</span>
+					<span class = "contacts">ZipCode: 06107</span>					
+					<iframe width="0" height="0" src="https://www.youtube.com/embed/KK2smasHg6w?rel=0&autoplay=1&loop=1&playlist=KK2smasHg6w" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			</footer>
+		</body>
+</html>

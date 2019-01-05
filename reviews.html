@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Tea Website-->
+
+<html lang="en">
+	<head>
+		<title>Café au Lait: Pastries</title>
+		<link rel="stylesheet" type="text/css" href="base.css">
+		<link rel="stylesheet" type="text/css" href="reviews.css">
+		<link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Rakkas' rel='stylesheet' type='text/css'>
+		<script src="base.js"></script>
+		<script src="reviews.js"></script>
+		<meta charset="utf-8">
+	</head>
+		
+		<body onload = "cookiesOn();">
+			<header>
+				<span id = "site_title"><h1>Café au Lait</h1></span>
+				<img src = "signature_cat.gif" alt = "Cafe Icon" id = "signature_cat">
+			</header>
+			<nav>
+				<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="coffee.html">Coffees</a></li>
+				  <li><a href="tea.html">Teas</a></li>
+				  <li><a href="pastries.html">Pastries</a></li>
+				  <li><a class="active" href="reviews.html">Reviews</a></li>
+				  <li><a href="shoppingcart.html">Shopping Cart  <img src = "shopping_cart.png" id = "shopping_cart"></a> </li>
+				</ul>
+			</nav>
+			<main>
+				
+				<h2><b><u>Reviews</u></b></h2>
+				<hr>
+				<br>
+				<br>
+				<span id = "reviewSheet"> </span>
+				<br>
+				<br>
+				<span id = "options">
+					<select id = "fontSelect" class = "optionText" onchange = "setSize();">
+					  <option value="12px">12</option>
+					  <option value="13px">13</option>
+					  <option value="14px" selected = "selected" >14</option>
+					  <option value="15px">15</option>
+					  <option value="16px">16</option>
+					</select>
+					<select id = "colorSelect" class = "optionText" onchange = "setColor();">
+					  <option value="black" selected = "selected">Black</option>
+					  <option value="red">Red</option>
+					  <option value="orange">Orange</option>
+					  <option value="yellow">Yellow</option>
+					  <option value="blue">Blue</option>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+					  <option value="green">Green</option>
+					  <option value="indigo">Indigo</option>
+					  <option value="violet">Violet</option>
+					</select>
+					<button type="button" id = "bold" class = "optionText" onclick = "boldText();"><b>Bold</b></button>
+					<button type="button" id = "italic" class = "optionText" onclick = "italicText();"><i>Italicize</i></button> 
+				</span>				
+				<br>
+				<textarea id = "userReview" class = "optionText" rows="12" cols="70" placeholder = "Write review here and press the submit button to submit review."></textarea>
+				<br>
+				<button type="button" id = "submitButton" class = "optionText" onclick = "writeReviews();">Submit</button> 
+				<br>
+				<br>
+				<span id = "warning">*Please note that changing any formatting will affect the whole text and not just the selected. </span>
+			</main>
+			<footer>
+			<b>Contact Info: </b> 
+				<br>
+					<span class = "contacts" >Owner Name: Isaac Moise</span>
+					<span class = "contacts" >Phone Number: XXX-XXX-0891</span>
+				<br>
+				<b>Location: </b>
+				<br>
+					<span class = "contacts">Address: 361 Covfefe Dr.</span>
+					<span class = "contacts">City: West Hartford, CT</span>
+					<span class = "contacts">ZipCode: 06107</span>		
+					<iframe width="0" height="0" src="https://www.youtube.com/embed/0NvuXEO8bSw?rel=0&autoplay=1&loop=1&playlist=0NvuXEO8bSw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+			</footer>
+		</body>
+</html>

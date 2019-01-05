@@ -1,0 +1,45 @@
+h2{
+	text-align:center; 
+	font-size: 34px;
+	font-family: 'Rakkas', cursive;
+}
+#userReview{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#options{
+	margin-left: 410px;
+	font-size: 18px;
+}
+.optionText{
+	font-size: 14px;
+}
+#bold:hover{
+	cursor: pointer;
+}
+#italic:hover{
+	cursor: pointer;
+}
+#submitButton{
+	margin-left: 410px;
+	font-size:18px;
+	background-color: rgb(160,82,45);
+	color: rgb(255, 255, 255);
+}
+#submitButton:hover{
+	background-color: rgb(120,42,5);
+	color: rgb(215, 215, 215);
+	cursor: pointer;
+}
+#submitButton:active {
+	background-color: rgb(120,42,5);
+	color: rgb(215, 215, 215);
+	box-shadow: 0 8px #666;
+	transform: translateY(1.5px);
+}
+#warning{
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
